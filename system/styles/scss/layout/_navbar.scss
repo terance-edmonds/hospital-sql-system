@@ -1,0 +1,37 @@
+#navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+    .main-title {
+        color: #293462 !important;
+        text-align: center;
+    }
+
+    .user-details-form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
+        .user-details {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            
+            .details-wrap {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                
+                .title {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

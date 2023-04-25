@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.tab-content {
+    padding: 20px 20px 30px 20px;
+}
+
+.custom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px 20px 50px 20px;
+}
+
+.section {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    
+    &[data-active="1"] {
+        display: flex;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+
+        .query-wrap {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .query {
+                font-weight: 500;
+                width: max-content;
+            }
+
+        }
+    }
+}
+
+.view {
+    min-height: 100px;
+    background-color: #eeeeee60;
+    border-radius: 7px;
+    border: 2px solid #eee;
+    padding: 15px;
+    margin-top: 10px
+}
+
+.input {
+    max-width: 160px;
+    width: max-content;
+
+    &.mx {
+        max-width: 200px;
+    }
+}
+
+.row-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.roles-drop-down {
+    display: none;
+
+    &[data-active="true"] {
+        display: block;
+    }
+}
+
+// layouts
+@import './layout/navbar';
+
+// components
+@import './components/tabs';
+
+// pages
+@import './pages/login_register';
